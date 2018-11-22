@@ -1,3 +1,4 @@
+/* TESTING TO EDIT ON GITHUB */
 #include <Servo.h>
 char data = 0;
 int a=5;
@@ -19,7 +20,7 @@ myservo2.attach(b);
 myservo3.attach(c);
 myservo4.attach(d);
 myservo5.attach(e);
-//Sets digital pin 13 as output pin
+
 }
 void loop()
 {
@@ -30,10 +31,10 @@ Serial.print(data);        //Print Value inside data in Serial monitor
 Serial.print("\n");        //New line 
 if(data == '1'){           //Checks whether value of data is equal to 1 
 myservo1.write(180);
-}//If value is 1 then LED turns ON
+}
 else if(data == '2'){       //Checks whether value of data is equal to 0
 myservo1.write(0); 
-}//If value is 0 then LED turns OFF
+}
 else if(data == 'c'){           
   myservo2.write(180);
 }
